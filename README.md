@@ -2,7 +2,7 @@
 
 DevSpace is a local, native macOS cleanup app for game developers. It discovers reclaimable developer storage, explains what is safe to regenerate, and moves only explicitly selected items to macOS Trash.
 
-![DevSpace icon](Resources/DevSpaceIcon.svg)
+<img src="Resources/DevSpaceIcon.svg" alt="DevSpace icon" width="400">
 
 ## What it checks
 
