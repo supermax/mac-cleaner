@@ -1,0 +1,26 @@
+# Swift Package Manager and Xcode build products
+.build/
+DerivedData/
+*.xcarchive
+*.xcresult
+
+# Packaged app output (reproducible with scripts/build-app.sh)
+dist/
+
+# Xcode per-user state
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcuserstate
+
+# macOS metadata and temporary files
+.DS_Store
+*.swp
+*.tmp
+
+# Local editor state
+.vscode/
+
+# Signing credentials and provisioning material
+*.mobileprovision
+*.p12
+*.cer

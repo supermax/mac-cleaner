@@ -1,0 +1,27 @@
+name: Build DevSpace
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build macOS app
+    runs-on: macos-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build Swift package
+        run: swift build -c release
+
+      - name: Package application bundle
+        run: ./scripts/build-app.sh
+
+      - name: Validate bundle metadata
+        run: plutil -lint dist/DevSpace.app/Contents/Info.plist

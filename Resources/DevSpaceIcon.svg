@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="124" y1="94" x2="900" y2="930" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#172D55"/><stop offset="1" stop-color="#07101F"/>
+    </linearGradient>
+    <linearGradient id="disk" x1="242" y1="227" x2="784" y2="792" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#78C6FF"/><stop offset="1" stop-color="#3978E9"/>
+    </linearGradient>
+    <linearGradient id="clean" x1="662" y1="278" x2="835" y2="458" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#99F4D4"/><stop offset="1" stop-color="#2BCB9A"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1024" height="1024" filterUnits="userSpaceOnUse"><feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#000" flood-opacity=".28"/></filter>
+  </defs>
+  <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+  <circle cx="512" cy="512" r="385" fill="#65B7FF" opacity=".1"/>
+  <g filter="url(#shadow)">
+    <rect x="214" y="253" width="596" height="520" rx="84" fill="url(#disk)"/>
+    <rect x="258" y="300" width="508" height="115" rx="43" fill="#DDF2FF" opacity=".8"/>
+    <circle cx="353" cy="357" r="25" fill="#2172C6"/><circle cx="431" cy="357" r="25" fill="#2172C6"/>
+    <rect x="293" y="493" width="438" height="162" rx="54" fill="#154E9D" opacity=".75"/>
+    <circle cx="512" cy="574" r="48" fill="#BCE8FF"/>
+    <circle cx="512" cy="574" r="21" fill="#286ABD"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M623 515h190l-17 268c-2 29-23 51-52 51H692c-29 0-50-22-52-51l-17-268z" fill="#F5FBFF"/>
+    <path d="M602 481h232c14 0 25 11 25 25v18c0 14-11 25-25 25H602c-14 0-25-11-25-25v-18c0-14 11-25 25-25z" fill="#A9DAFF"/>
+    <path d="M681 465c0-26 20-46 46-46h-10c26 0 46 20 46 46" fill="none" stroke="#A9DAFF" stroke-width="28" stroke-linecap="round"/>
+    <path d="M688 606v143M739 606v143" stroke="#4B92D9" stroke-width="24" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M744 192c7 62 29 84 88 91-59 7-81 29-88 91-7-62-29-84-88-91 59-7 81-29 88-91z" fill="url(#clean)"/>
+    <path d="M836 379c4 35 17 48 51 52-34 4-47 17-51 52-4-35-17-48-51-52 34-4 47-17 51-52z" fill="#9AF5D6"/>
+  </g>
+</svg>
